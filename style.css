@@ -1,0 +1,95 @@
+.header{
+    /* height:70px; */
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    /* background-color: #ccc; */
+    position: fixed;
+}
+body{
+    font-weight: 1.5rem;
+}
+input{
+    border-radius:30px;
+    border-color:1px solid;
+    width: 500px;
+    box-shadow: inset 2px 2px 3px gray;
+}
+.ham{
+    display: none;
+}
+.edu{
+    color: blue;
+    font-size:1.5rem;
+    font-weight: bolder;
+}
+.mey{
+    color:orangered;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+img{
+    width:50px;
+}
+.fa-solid{
+    margin:15px;
+    font-size: 1.5rem;
+}
+.signup{
+    background-color: black;
+    color: #fff;
+}
+/* button{
+    padding-left: 10px;
+    padding-right:10px ;
+} */
+/* #globe{
+    height:50px;
+    width: 50px;
+    border:1px solid;
+    justify-content: center;
+} */
+@media screen and (width<1200px){
+    input{
+        width:350px;
+    }
+    .teach{
+        display: none;
+    }
+}
+@media screen and (width<980px){
+    input{
+        width:250px;
+    }
+    .plan,.signup,#categories{
+        display: none;
+    }
+}
+@media screen and (width<800px){
+    .header{
+        justify-content: space-between;
+    }
+    .ham{
+        display: block;
+    }
+    input{
+        display: none;
+    }
+    p{
+        display: none;
+    }
+    .edu{
+        justify-content: center;
+    }
+    button{
+        display: none;
+    }
+    #globe{
+        display: none;
+    }
+    #cart{
+        padding: 10px;
+    }
+}

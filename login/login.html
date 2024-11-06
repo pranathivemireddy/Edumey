@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height:700px;
+            width:600px;
+        }
+        .main-container{
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .login-img{
+            order: 1;
+        }
+        .formData{
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container   ">
+    <div class="login-img">
+    <img src="https://frontends.udemycdn.com/components/auth/desktop-illustration-step-2-x2.webp" alt="">
+    </div>
+    <div class="formData">
+       <h2>Log in to continue your learning journey</h2>
+       <input type="email" pattern="[A-Za-z0-9]@[gmail|yahoo|outlook].[com|in]" placeholder="Email" required>
+       <button>✉ Continue with email</button>
+       <p>--------------Other log in options----------</p>
+       <div>
+       <div></div>
+       <div></div>
+       <div></div>
+    <div>Don't have an account?<a href="SignUp">Sign Up</a></div>
+    <div><a href="Log in with your organization"></a></div>
+    </div>
+    </div>
+</body>
+</html>
