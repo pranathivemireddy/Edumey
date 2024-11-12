@@ -1,25 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    <div class="header">
-        <span class="ham"><i class="fa-solid fa-bars"></i></span>
-        <span class="edu">edu<span class="mey">mey</span></span>
-        <p>Categories</p>
-        <input type="text" placeholder="   &#128269 Search for Anything">
-        <p class="plan">Plans&Pricing</p>
-        <p class="business">Edumey Business</p>
-        <p class="teach">Teach on Edumey</p>
-        <i id= cart class="fa-solid fa-cart-shopping"></i>
-        <button><a href="./login/login.html">Login</a></button>
-        <button><a href="./signup.html">Sign up</a></button>
-        <i id=globe class="fa-solid fa-globe"></i>
+  <!-- HEADER -->
+  <header class="header">
+    <span class="ham"><i class="fa-solid fa-bars"></i></span>
+    <span class="edu">edu<span class="mey">mey</span></span>
+    <span class="categories">Categories</span>
+    <input type="text" placeholder="   &#128269 Search for Anything">
+    <span class="plan">Plans&Pricing</span>
+    <span class="business">Edumey Business</span>
+    <span class="teach">Teach on Edumey</span>
+    <i id=cart class="fa-solid fa-cart-shopping"></i>
+    <a href="./login/login.html" class="button">Login</a>
+    <a href="./signup.html"><button class="signup">Sign up</button></a>
+    <i id=globe class="fa-solid fa-globe"></i>
+  </header>
+  <main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/edumey_b1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img-c.udemycdn.com/notices/web_carousel_slide/image/a91a73da-15d3-409a-ba7f-6f67ba9e3661.png"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/edumey_b1.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <script src="https://kit.fontawesome.com/3a4127e21c.js" crossorigin="anonymous"></script>
+    <!--BODY-->
+    <div class="container p-3">
+    <section class="section">
+      <h2><b>All the skills you need in one place</b></h2>
+      <span>From critical skills to technical topics, Udemy supports your professional development.</span>
+      <div class="technologies">
+        <span>Web Development</span>
+        <span>IT Certifications</span>
+        <span>CSS</span>
+        <span>Javascript</span>
+        <span>Node Js</span>
+        <span>React Js</span>
+        <span>Python</span>
+        <span>Data Analytics</span>
+        <span>Machine Learning</span>
+        <span>Data Science</span>
+      </div>
+      <hr>
+      <!-- BUTTONS -->
+      <div class="button-container">
+        <span class="btn1 bg-dark">WEB DEVELOPMENT</span>
+        <span>APP DEVELOPMENT</span>
+        <span>IOS DEVELOPMENT</span>
+        <span>ANDROID DEVELOPMENT</span>
+        <span>JAVASCRIPT</span>
+        <span>REACTJS</span>
+        <span>PYTHON</span>
+        <span>DATA ANALYTICS</span>
+        <span>MACHINE LEARNING</span>
+        <span>DATA SCIENCE</span>
+        <span>JAVA</span>
+      </div>
+    </section>
+    <!-- COURSES -->
+    <section class="courses">
+      <section>
+        <div class="webdev">
+          <img src="https://img-c.udemycdn.com/course/480x270/1565838_e54e_18.jpg" alt="">
+          <span><b>The Complete Web Development Bootcamp</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+      <section>
+        <div class="appdev">
+          <img class="app" src="./images/App.webp" alt="">
+          <span><b>The Complete App Development Course</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+      <section>
+        <div class="iosdev">
+          <img class="ios" src="https://img-c.udemycdn.com/course/750x422/1778502_f4b9_12.jpg" alt="">
+          <span><b>The Complete IOS Development Bootcamp</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+      <section>
+        <div class="androiddev">
+          <img class="android" src="https://img-c.udemycdn.com/course/750x422/4365954_c92d_6.jpg" alt="">
+          <span><b>The Complete Android Development Bootcamp</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+      <section>
+        <div class="javascript">
+          <img class="javascript" src="https://img-c.udemycdn.com/course/480x270/3997642_fed4.jpg" alt="">
+          <span><b>The Complete Javascript Course:From Zero to Hero!</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+      <section>
+        <div class="react">
+          <img class="react" src="https://img-c.udemycdn.com/course/480x270/1362070_b9a1_2.jpg" alt="">
+          <span><b>React:The Complete Guide inc.(Node.js,Redux)</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+      <section>
+        <div class="python">
+          <img class="python" src="https://img-c.udemycdn.com/course/480x270/567828_67d0.jpg" alt="">
+          <span><b>100 Days of Code:The Complete Python Pro Bootcamp</b></span>
+          <span>Dr.Angela Yu,Developer and Lead</span>
+          <span>4.7
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </span>
+          <span>&#8377 549</span>
+          <span class="best bg-warning">Best Seller</span>
+        </div>
+      </section>
+    </section>
+    <button class="p-2 m-3">Show Web Development Courses</button>
+    <!-- LOGOS -->
+    <section>
+      <p class="m-3 text-center text-secondary">Trusted by over 16,000 companies and millions of learners around the world</p>
+      <div class="logos">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="">
+        <img class="logo"
+          src="data:image/png;base64,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"
+          alt="">
+        <img class="logo" src="./images/cisco.png" alt="">
+        <img class="logo" src="./images/p&g.png" alt="">
+        <img class="logo" src="./images/vimeo.png" alt="">
+        <img class="logo" src="./images/citi.png" alt="">
+        <img class="logo" src="./images/Ericson.png" alt="">
+        <img class="logo" src="./images/HPE.png" alt="">
+      </div>
+      <!-- LEARNERS ARE VIEWING -->
+      <h1 class="fs-3 p-1 mt-5">Learners are viewing</h1>
+      <section class="learners">
+        <section>
+          <div class="webdev">
+            <img src="https://img-c.udemycdn.com/course/480x270/567828_67d0.jpg" alt="">
+            <span><b>100 Days of Code:The Complete Python Pro Bootcamp</b></span>
+            <span>Jose Portilla,Pierian Training</span>
+            <span>4.7
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 3299</span>
+            <span class="best bg-warning">Best Seller</span>
+          </div>
+        </section>
+        <section>
+          <div class="webdev">
+            <img src="https://img-c.udemycdn.com/course/750x422/6035102_7d1a.jpg" alt="">
+            <span><b>Complete WEB Development Course</b></span>
+            <span>Hitesh Reddy</span>
+            <span>4.8
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 1099</span>
+            <span class="best bg-danger">Hot &New</span>
+          </div>
+        </section>
+        <section>
+          <div class="webdev">
+            <img src="https://img-c.udemycdn.com/course/480x270/1565838_e54e_18.jpg" alt="">
+            <span><b>The Complete Web Development Bootcamp</b></span>
+            <span>Dr.Angela Yu,Developer and Lead</span>
+            <span>4.7
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 3099</span>
+            <span class="best bg-warning">Best Seller</span>
+          </div>
+        </section>
+        <section>
+          <div class="webdev">
+            <img src="https://img-c.udemycdn.com/course/480x270/3997642_fed4.jpg" alt="">
+            <span><b>The Complete Javascript Course:From Zero to Hero! </b></span>
+            <span>Jonas Schmedtmann</span>
+            <span>4.7
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 3449</span>
+            <span class="best bg-warning">Best Seller</span>
+          </div>
+        </section>
+        <section>
+          <div class="webdev">
+            <img src="https://img-c.udemycdn.com/course/480x270/1362070_b9a1_2.jpg" alt="">
+            <span><b>React:The Complete Guide inc.(Node.js,Redux)</b></span>
+            <span>Maximillian Schwarzmull</span>
+            <span>4.7
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 3149</span>
+            <span class="best bg-warning">Best Seller</span>
+          </div>
+        </section>
+        <section>
+          <div class="webdev">
+            <img src="https://www.ceo-review.com/wp-content/uploads/2021/10/Machine-Learning.jpg" alt="">
+            <span><b>Machine Learning A-Z, AI,Python & ChatGpt</b></span>
+            <span>Dr.Angela Yu,Developer and Lead</span>
+            <span>4.7
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 3249</span>
+            <span class="best bg-warning">Best Seller</span>
+          </div>
+        </section>
+        <section>
+          <div class="webdev">
+            <img
+              src="https://cdn.prod.website-files.com/63ccf2f0ea97be12ead278ed/644a18b637053fa3709c5ba2_what-is-data-science.jpg"
+              alt="">
+            <span><b>Data Science Course:The Complete Data Science Bootcamp</b></span>
+            <span>365 Careers</span>
+            <span>4.6
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </span>
+            <span>&#8377 4099</span>
+            <span class="best bg-warning">Best Seller</span>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!---LEARNING FOCUSED ON YOUR GOALS-->
+    <h2><b class="p-3">Learning focused on your goals</b></h2>
+    <section>
+      <div class="grid-container">
+        <div>
+          <div class="box">
+            <img class="images"
+              src="https://cms-images.udemycdn.com/96883mtakkm8/7kN9RBFSMFNHzsGWsElMPi/dde73f8d1c47e046f035274e78410590/hands-on-practice.png"
+              alt="">
+            <p><b>Hands-on training</b><br>
+              Upskill effectively with AI-powered coding exercises, practice tests, and quizzes.</p>
+          </div>
+          <div class="box">
+            <img class="images"
+              src="https://cms-images.udemycdn.com/96883mtakkm8/2Xh9YHJustDwCEjn5IlO25/93e9b15c6e74876db0dec63466fcc5a0/certificate.png"
+              alt="">
+            <p><b>Certification prep</b><br>
+
+              Prep for industry-recognized certifications by solving real-world challenges and earn badges along the
+              way.
+            </p>
+            <a href="#">Explore Courses <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <img class="images"
+              src="https://cms-images.udemycdn.com/96883mtakkm8/6w8plrr7vY9rIY46UuX0q5/2f0a3f0c22e99bd2d430b998c81321f2/empty-state-1.png"
+              alt="">
+            <p><b>Insights and Analytics</b><br>
+              Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective
+              learning.<br>
+            </p>
+            <a href="#">Find Out More<i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <img class="images"
+              src="https://cms-images.udemycdn.com/96883mtakkm8/2tKGBrb1N60wox2Lh8j3tz/7f1528c9f88ea47bd6ebb46f345902c3/organizations-2.png"
+              alt="">
+            <p><b>Customizable Content</b><br>
+              Create tailored learning paths for team and organization goals and even host your own content and
+              resources.
+            </p>
+            <a href="#">Find Out More<i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="grid-sub">
+          <img class="grid2"
+            src="https://cms-images.udemycdn.com/96883mtakkm8/4kbyXne3Slx9Sfz4nTBqdf/8ac2b75db1a118f15e2fb5dfe2bb4567/desktop-hands-on-learning-2x.png"
+            alt="">
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- ACCELERATE GROWTH -->
+    <span><b class="fs-2 mb-3 p-3">Accelerate growth — for you or your organization</b></span><br>
+      <span class="p-3 d-inline-block">Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn
+      more.</span>
+    <section class="grid-container1">
+      <!-- card-1 -->
+      <section class="accelerate">
+        <div class=" accelerate-sub">
+          <div class="accelerate1">
+            <span><b>Personal Plan</b></span>
+            <span class="acc-title">For you</span>
+            <span class="bi bi-person text-secondary">Individual</span>
+          </div>
+          <div class="accelerate1">
+            <span class="section-5"><b>Starting at ₹850 per month</b></span>
+            <span class="section-5 p-2 acc-title">Billed monthly or annually. Cancel anytime.</span>
+            <button>Start Subscription<i class="bi bi-arrow-right"></i></button>
+            <span><i class="bi bi-check-circle"></i>Access to 12,000+ top courses</span>
+            <span><i class="bi bi-check-circle"></i>Certification prep</span>
+            <span><i class="bi bi-check-circle"></i>Goal-focused recommendations</span>
+            <span><i class="bi bi-check-circle"></i>AI-powered coding exercises</span>
+          </div>
+        </div>
+      </section>
+      <!-- card-2 -->
+      <section class="accelerate">
+        <div class="accelerate-sub">
+          <div class="accelerate1">
+            <span><b>Team Plan</b></span>
+            <span class="acc-title">For your team</span>
+            <span class="bi bi-person text-secondary">2 to 20 people</span>
+          </div>
+          <div class="accelerate1">
+            <span class="section-5"><b>Starting at ₹850 per month</b></span>
+            <span class="section-5 p-2 acc-title">Billed monthly or annually. Cancel anytime.</span>
+            <button>Start Subscription<i class="bi bi-arrow-right"></i></button>
+            <span><i class="bi bi-check-circle"></i>Access to 12,000+ top courses</span>
+            <span><i class="bi bi-check-circle"></i>Certification prep</span>
+            <span><i class="bi bi-check-circle"></i>Goal-focused recommendations</span>
+            <span><i class="bi bi-check-circle"></i>AI-powered coding exercises</span>
+          </div>
+        </div>
+      </section>
+      <!-- card-3 -->
+      <section class="accelerate">
+        <div class="accelerate-sub">
+          <div class="accelerate1">
+            <span><b>Enterprise Plan</b></span>
+            <span class="acc-title">For your whole Organization</span>
+            <span class="bi bi-person text-secondary">More than 20 people</span>
+          </div>
+          <div class="accelerate1">
+            <span class="section-5"><b>Starting at ₹850 per month</b></span>
+            <span class="section-5 p-2 acc-title">Billed monthly or annually. Cancel anytime.</span>
+            <button>Start Subscription<i class="bi bi-arrow-right"></i></button>
+            <span><i class="bi bi-check-circle"></i>Access to 12,000+ top courses</span>
+            <span><i class="bi bi-check-circle"></i>Certification prep</span>
+            <span><i class="bi bi-check-circle"></i>Goal-focused recommendations</span>
+            <span><i class="bi bi-check-circle"></i>AI-powered coding exercises</span>
+            <span><i class="bi bi-check-circle"></i>Access to 12,000+ top courses</span>
+            <span><i class="bi bi-check-circle"></i>Certification prep</span>
+            <span><i class="bi bi-check-circle"></i>Goal-focused recommendations</span>
+            <span><i class="bi bi-check-circle"></i>AI-powered coding exercises</span>
+            <span><i class="bi bi-check-circle"></i>Goal-focused recommendations</span>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section>
+      <p><b class="fs-3 d-inline-block p-3">See what others are achieving through learning</b></p>
+    </section>
+    <!-- REVIEWS CONTAINER(SEE WHAT OTHERS ARE ACHIEVEING THROUGH) -->
+    <section class="reviews">
+      <!-- card-1 -->
+      <section class="reviewcard">
+        <div class="stars">
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div class="review">
+          Because of this course I was able to clear my two interviews... Thanks for making such wonderful content.
+        </div>
+        <div class="person">
+          <span><img src="" alt=""> ANKITH</span>
+        </div>
+      </section>
+      <!-- card-2 -->
+      <section class="reviewcard">
+        <div class="stars">
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div class="review">
+          This has helped me so much in my career...I joined as a frontend engineer and eventually transitioned to full
+          stack engineer with the help of this course.
+        </div>
+        <div class="person">
+          <span><img src="" alt=""> SUMANTH</span>
+        </div>
+      </section>
+      <!-- card-3 -->
+      <section class="reviewcard">
+        <div class="stars">
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div class="review">
+          As a software developer today, I owe much of my success to the strong groundwork established by this course.
+        </div>
+        <div class="person">
+          <span><img src="" alt="">ABHISHEK P</span>
+        </div>
+      </section>
+      <!-- card-4 -->
+      <section class="reviewcard">
+        <div class="stars">
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div class="review">
+          Today, as a JavaScript developer, I credit much of my success to the strong fundamentals this course instilled
+          in me.
+        </div>
+        <div class="person">
+          <span><img src="" alt="">BHARGAV V</span>
+        </div>
+      </section>
+      <!-- card-5 -->
+      <section class="reviewcard">
+        <div class="stars">
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div class="review">
+          Today, as a data analyst, I can trace much of my success back to the foundational knowledge this course
+          provided.
+        </div>
+        <div class="person">
+          <span><img src="" alt=""> PRANITHA REDDY</span>
+        </div>
+      </section>
+      <!-- card-6 -->
+      <section class="reviewcard">
+        <div class="stars">
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <div class="review">
+          My success in data science is deeply rooted in the strong analytical foundation and critical thinking skills
+          this course helped me build.
+        </div>
+        <div class="person">
+          <span><img src="" alt=""> ALICE BOB</span>
+        </div>
+      </section>
+    </section>
+    <!-- TOP TRENDS FOR THE FUTURE -->
+    <section class="trend">
+      <div>
+        <p><b class="fs-2">Top trends for the future of work</b></p>
+        <p>GenAI and leadership are at the core of today's skills-based economy. Get the 2024 Global Learning & Skills
+          Trends Report to learn more.</p>
+        <button>Get Report<i class="bi bi-arrow-right"></i></button>
+      </div>
+      <img class="trend1"
+        src="https://cms-images.udemycdn.com/96883mtakkm8/1NkfOmpshG42EUGu69VrSS/d3bc0ab5cf4c593d9dfceb2817fc935f/image_revision_12024_Angled_trend_reports.png"
+        alt="">
+    </section>
+  </div>
+</main>
+  <footer>
+    <div class="container1">
+      <span>Top companies choose Udemy Business to build in-demand career skills.</span>
+      <div>
+        <img src="https://s.udemycdn.com/partner-logos/v4/box-light.svg" alt="" class="fimg">
+        <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="" class="fimg">
+        <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="" class="fimg">
+        <img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="" class="fimg">
+        <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg" alt="" class="fimg">
+      </div>
+    </div>
+    <hr>
+    <div class="fsection-container">
+      <span>Explore top skills and certifications</span>
+      <div class="fsection-sub-container">
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Certifications by Issuer</span>
+          <span>Amazon Web Services (AWS) Certifications</span>
+          <span>Six Sigma Certfications</span>
+          <span>Microsoft Certificates</span>
+          <span>Tableau Certifcates</span>
+          <span>See all certifications</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Web Development</span>
+          <span>Web Development</span>
+          <span>Javascript</span>
+          <span>React</span>
+          <span>Angular</span>
+          <span>Java</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">IT Certifications</span>
+          <span>Amazon AWS</span>
+          <span>AWS Cloud Partitioner</span>
+          <span>AZ-900 Microsoft Azure Fundamentals</span>
+          <span>AWS Certified Solutions Architect</span>
+          <span>Kubernetes</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">LeaderShip</span>
+          <span>Leadership</span>
+          <span>Management Skills</span>
+          <span>Project Management</span>
+          <span>Personal Productivity</span>
+          <span>Emotional Intelligence</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Certifications by Skills</span>
+          <span>Cybersecurity</span>
+          <span>Project Managemnet</span>
+          <span>Cloud Certificates</span>
+          <span>Data Analytics Certifcates</span>
+          <span>See all certifications</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Data Science</span>
+          <span>Data Science</span>
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Deep Learning</span>
+          <span>See all certifications</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Communication</span>
+          <span>Communication Skills</span>
+          <span>Public Speaking</span>
+          <span>Presentation Skills</span>
+          <span>Writing</span>
+          <span>Power Point</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Business Analytics & Intelligence</span>
+          <span>Microsoft Excel</span>
+          <span>PowerBi</span>
+          <span>SQL</span>
+          <span>Data Analytics</span>
+          <span>Business Analytics</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">About</span>
+          <span>About</span>
+          <span>Contact Us</span>
+          <span>Careers</span>
+          <span>Blog</span>
+          <span>Investors</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Discovery On edumey</span>
+          <span>Get the app</span>
+          <span>Teach on edumey</span>
+          <span>Plans & Pricing</span>
+          <span>Affiliate</span>
+          <span>Help and Support</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">edumey for Business</span>
+          <span>edumey Business</span>
+        </div>
+        <!--F-SECTION-->
+        <div class="fsection">
+          <span class="title">Legal & Accessibility</span>
+          <span>Accessibility Statement</span>
+          <span>Privacy Policy</span>
+          <span>Sitemap</span>
+          <span>Terms</span>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="fsection-l">
+      <span class="edu">edu<span class="mey">mey</span><span class="fs-6 fw-light text-light">©2024 edumey,
+          Inc.</span></span>
+      <span>Cookie Settings</span>
+      <span><i class="bi bi-globe"></i>English</span>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/3a4127e21c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

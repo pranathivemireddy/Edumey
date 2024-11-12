@@ -5,8 +5,11 @@
     gap: 10px;
     padding: 10px;
     justify-content: space-around;
-    /* background-color: #ccc; */
+    align-items: center;
+    background-color: #ccc;
+    box-shadow: 5px 5px 3px #fff;
     position: fixed;
+    z-index: 1;
 }
 body{
     font-weight: 1.5rem;
@@ -16,6 +19,7 @@ input{
     border-color:1px solid;
     width: 500px;
     box-shadow: inset 2px 2px 3px gray;
+    padding: 0.7em;
 }
 .ham{
     display: none;
@@ -30,27 +34,228 @@ input{
     font-size: 2rem;
     font-weight: lighter;
 }
-img{
-    width:50px;
-}
 .fa-solid{
     margin:15px;
     font-size: 1.5rem;
 }
-.signup{
-    background-color: black;
-    color: #fff;
+main{
+    padding: 0rem 2rem;
 }
-/* button{
-    padding-left: 10px;
-    padding-right:10px ;
-} */
-/* #globe{
-    height:50px;
-    width: 50px;
-    border:1px solid;
-    justify-content: center;
-} */
+.header>button{
+    padding:10px;
+    /* background-color: ; */
+    text-decoration: none;
+}
+/* .section>h2,.section>span{
+    /* padding: 1rem; */
+.carousel-control-prev, .carousel-control-next{
+    display: none;
+}
+.technologies{
+    display:flex;
+    gap:2rem;
+    margin-top:2.5rem;
+}
+.button-container{
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    overflow: scroll;
+    padding: 1.2rem;
+    scrollbar-width:none;
+}
+.button-container>span{
+    font-size: 1rem;
+    padding:1em 1.6em;
+    border-radius: 40px;
+    background-color: #eee;
+    border-color:#eee;
+    align-self: center;
+    
+}
+.btn1{
+    background-color: #000;
+    color:#fff;
+}
+.courses{
+    display: flex;
+    gap: 2rem;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.webdev,.appdev,.iosdev,.androiddev,.javascript,.react,.python{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+}
+.best{
+    width: fit-content;
+}
+.app{
+    width: 280px;
+    height: 150px;
+}
+.ios,.android,.javascript,.react,.python{
+    width: 300px;
+}
+.logos{
+    display:flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.learners{
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.image{
+    width:600px;
+
+}
+.images{
+    width: 70px;
+    height: 70px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+}
+.grid-sub{
+    width:100%;
+}
+.grid2{
+    width: 600px;
+    height: 600px;
+}
+.box{
+    display: grid;
+    grid-template-columns: 20% 60%;
+}
+.accelerate,.accelerate1{
+    display: flex;
+    flex-direction: column;
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    padding: 10px;
+}
+.accelerate{
+    border: 1px solid;
+    box-shadow: inset 0px 7px rgb(187, 4, 187);
+    border-radius: 20px;
+}
+.accelerate1{
+    margin: 20px;
+    padding: 10px;
+}
+.bi-check-circle{
+    color: green;
+    margin: 5px;
+}
+.accelerate1>span{
+    padding: 5px;
+}
+.accelerate1>button{
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #000;
+    color:#fff;
+    width:100%;
+}
+.acc-title{
+    font-size: 12px;
+}
+.reviews{
+    background-image: url(../Images/Carousels/Banner-2.jpg);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center center;
+    gap: 20px;
+}
+.reviewcard{
+    background-color: #000;
+    height: 300px;
+    width: 22vw;
+    color: #fff;
+    padding: 1.2em;
+}
+.reviewcard>div{
+    padding: 0.8em;
+}
+.trend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trend>div{
+    width: 25vw;
+}
+.trend1{
+    width: 65vw;
+    height: 700px;
+}
+footer{
+    background-color: #000;
+    color:#fff;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.container1>div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.fsection-sub-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    place-items: center;
+}
+.fsection-container>span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.2rem;
+}
+.fsection{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1.2em;
+    width: 22vw;
+}
+.title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.fsection-l{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (width<1200px){
     input{
         width:350px;
@@ -63,11 +268,14 @@ img{
     input{
         width:250px;
     }
-    .plan,.signup,#categories{
+    .plan{
+        display: none;
+    }
+    .signup,.categories{
         display: none;
     }
 }
-@media screen and (width<800px){
+@media screen and (width<580px){
     .header{
         justify-content: space-between;
     }
@@ -86,7 +294,7 @@ img{
     button{
         display: none;
     }
-    #globe{
+    #globe,.business{
         display: none;
     }
     #cart{
