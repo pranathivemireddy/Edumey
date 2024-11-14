@@ -264,7 +264,7 @@ footer{
         display: none;
     }
 }
-@media screen and (width<980px){
+@media screen and (min-width:550px) and (max-width:650px){
     input{
         width:250px;
     }
@@ -275,29 +275,96 @@ footer{
         display: none;
     }
 }
-@media screen and (width<580px){
-    .header{
-        justify-content: space-between;
-    }
-    .ham{
+
+@media screen and (max-width:320px){
+    .ham,.search,#cart,.edu{
         display: block;
     }
-    input{
+    .categories,input,.plan,.business,.teach,#globe,.button,.signup,.button-container,.technologies,.grid-container{
         display: none;
     }
-    p{
+    .header{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .carousel{
         display: none;
     }
-    .edu{
-        justify-content: center;
+    .trend{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80vw;
     }
-    button{
-        display: none;
+    .trend1{
+        width: 280px;
+        height: 300px;
     }
-    #globe,.business{
-        display: none;
-    }
-    #cart{
+    .trend>div{
+        width: 80vw;
         padding: 10px;
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .reviewcard{
+        width: 80vw;
+        place-content: center center;
+    }
+    .grid-container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .accelerate{
+        height: 200px;
+        overflow: hidden;
+    }
+    .accelerate:hover{
+        height:fit-content;
+    }
+    .logos{
+        display: flex;
+        flex-flow:row wrap;
+        gap:10px;
+    }
+    .courses+button{
+        font-size: 0.7em;
+    }
+    .courses,.learners{
+        height: 300px;
+    }
+    /* Footer 320px*/
+    .fsection-sub-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1>div{
+        width: 80vw;
+        flex-flow: row wrap;
+        height: 200px;
+    }
+    .container1>span{
+        font-size: 1em;
+    }
+    .fimg{
+        height: 100px;
+        width: 70px;
+    }
+    .fsection{
+        width: 80vw;
+    }
+    .fsection-container>span{
+        font-size: 1em;
+    }
+    .fsection-l{
+        display:flex;
+        flex-direction: column-reverse;
+        gap:10px;
     }
 }
