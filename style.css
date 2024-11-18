@@ -203,6 +203,53 @@ main{
     width: 65vw;
     height: 700px;
 }
+/*Learning Focused on Your Goals*/
+.test{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.test>section{
+    width: 40vw;
+}
+.cards{
+    border: 2px solid #000;
+    border-left-color: blueviolet;
+    border-left-width: 10px;
+    padding: 1.3em;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.containerImg{
+    width: 70px;
+    height: 70px;   
+}
+.data{
+    display: flex;
+    flex-direction: column;
+}
+.dataTitle{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.a{
+    text-decoration:none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+}
+.a:hover{
+    color: black;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+
+}
 footer{
     background-color: #000;
     color:#fff;
@@ -275,7 +322,7 @@ footer{
         display: none;
     }
 }
-
+/* 650-1000 */
 @media screen and (max-width:550px){
     .ham,.search,#cart,.edu{
         display: block;
@@ -306,10 +353,14 @@ footer{
     .reviews{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        place-content: center center;
     }
     .reviewcard{
         width: 80vw;
         place-content: center center;
+    }
+    .test{
+        display: none;
     }
     .grid-container1{
         display: flex;
@@ -333,7 +384,8 @@ footer{
     .courses,.learners{
         height: 300px;
     }
-    /* Footer 320px*/
+    
+    /* Footer 550px*/
     .fsection-sub-container{
         display: flex;
         flex-direction: column;
