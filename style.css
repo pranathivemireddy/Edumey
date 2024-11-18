@@ -334,7 +334,7 @@ footer{
         justify-content: space-around;
         align-items: center;
     }
-    .carousel{
+    .carousel,.reviewcard1{
         display: none;
     }
     .trend{
@@ -409,8 +409,13 @@ footer{
         width: 70px;
     }
     .fsection{
-        width: 80vw;
+         width: 80vw;
+         height: 50px;
+         overflow: hidden;
     }
+    .fsection:hover{
+        height:fit-content;
+     }
     .fsection-container>span{
         font-size: 1em;
     }
