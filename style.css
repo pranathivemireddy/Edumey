@@ -153,8 +153,8 @@ main{
     border-radius: 20px;
 }
 .accelerate1{
-    margin: 20px;
-    padding: 10px;
+    margin: 30px;
+    padding: 30px;
 }
 .bi-check-circle{
     color: green;
@@ -211,6 +211,9 @@ main{
 }
 .test>section{
     width: 40vw;
+}
+.dataConatiners{
+    margin-bottom: 100px;
 }
 .cards{
     border: 2px solid #000;
@@ -283,6 +286,9 @@ footer{
     padding: 1.2em;
     width: 22vw;
 }
+hr{
+    display: none;
+}
 .title{
     font-size: 1.1rem;
     font-weight: bold;
@@ -322,7 +328,46 @@ footer{
         display: none;
     }
 }
-/* 650-1000 */
+@media screen and (min-width:650px) and (max-width:1000px) {
+    .ham,.search,#cart,.edu{
+        display: block;
+    }
+    .categories,input,.plan,.business,.teach,#globe,.button,.signup,.button-container,.technologies,.grid-container{
+        display: none;
+    }
+    .header{
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .grid-container1{
+       display: flex;
+       flex-direction: column;
+    }
+    .accelerate{
+        height: 300px;
+        overflow: hidden;
+    }
+    .accelerate:hover{
+        height: fit-content;
+        
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-content: center center;
+    }
+    .reviewcard{
+        width: 40vw;
+        place-content: center center;
+    }
+    .trend1{
+        width: 80%;
+    }
+}
 @media screen and (max-width:550px){
     .ham,.search,#cart,.edu{
         display: block;
@@ -333,8 +378,12 @@ footer{
     .header{
         justify-content: space-around;
         align-items: center;
+        padding: 8px;
     }
-    .carousel,.reviewcard1{
+    .carousel{
+        padding-top: 400px;
+    }
+    .reviewcard1{
         display: none;
     }
     .trend{
