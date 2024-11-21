@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #ccc;
-    box-shadow: 5px 5px 3px #fff;
+    box-shadow: 5px #fff;
     position: fixed;
     z-index: 1;
 }
@@ -70,8 +70,7 @@ main{
     border-radius: 40px;
     background-color: #eee;
     border-color:#eee;
-    align-self: center;
-    
+    align-self: center;   
 }
 .btn1{
     background-color: #000;
@@ -332,16 +331,16 @@ hr{
     .ham,.search,#cart,.edu{
         display: block;
     }
-    .categories,input,.plan,.business,.teach,#globe,.button,.signup,.button-container,.technologies,.grid-container{
+    .categories,input,.plan,.business,.teach,#globe,.button,.signup,.button-container,.technologies,.grid-container,.imageContainer>iframe{
         display: none;
     }
     .header{
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 8px;
     }
     .cards{
-        width: 100%;
+        width: 80vw;
     }
     .grid-container1{
        display: flex;
@@ -366,6 +365,10 @@ hr{
     }
     .trend1{
         width: 80%;
+    }
+    .test{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width:550px){
